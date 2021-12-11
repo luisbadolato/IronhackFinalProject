@@ -1,0 +1,108 @@
+* {
+    font-family: "Consolas Regular";
+    color: #333;
+}
+.module-container {
+    background-image: url("../../../assets/images/bg_home.png");
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    // border: 5px solid blue;
+    .big-logo {
+        align-self: flex-end;
+        // border: 1px solid red;
+        width: 50%;
+        margin-top: 8vh;
+        margin-right: 10vw;
+        img {
+            width: 100%;
+        }
+    }
+
+    .user-data {
+        // border: 2px solid red;
+        margin: 5vh auto 2vh;
+        width: 70%;
+        text-align: center;
+        h2 {
+            font-size: 3.8rem;
+            margin-bottom: 2rem;
+        }
+        h3 {
+            font-size: 2.2rem;
+            margin-top: 1.5rem;
+            span {
+                font-weight: 200;
+                font-size: 2rem;
+            }
+        }
+    }
+
+    .lesson-data {
+        width: 50%;
+        margin: 0 auto;
+        max-height: 30vh;
+        padding: 0 1rem;
+        overflow: auto;
+        background-color: #fffb;
+        .lesson-data-item {
+            margin-bottom: 1rem;
+        }
+        span {
+            font-weight: 800;
+        }
+    }
+
+    .btns {
+        display:flex;
+        flex-direction: row;
+        width: 40%;
+        margin: 0 auto;
+    }
+    a{  
+        display:flex;
+        flex-direction: row;
+        width: 100%;
+        // border: 2px solid red;
+        margin: 3rem auto;
+        img {
+            width: 65%;
+            margin: 0 auto;
+            cursor: pointer;
+        }
+    }
+
+    
+    .form {
+        margin: 10vh auto;
+        width: 25%;
+        .form-group {
+            
+            width: 100%;
+            label {
+                width: 0%;
+                font-size: 1.5rem;
+            }
+            input {
+                font-size: 1.2rem;
+                width: 100%;
+                padding: 0.7rem 1rem;
+                margin-bottom: 1.5rem;
+            }
+            .btn-form {
+                width: 100%;
+                padding: 1rem;
+            }
+
+        }
+        .alert {
+            padding: 1rem;
+            margin-top: 2rem;
+            border: 3px solid red;
+            color: red;
+            background-color: #fac3c399;
+            text-align: center;
+        }
+    }
+}

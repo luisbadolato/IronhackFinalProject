@@ -1,0 +1,473 @@
+/***************/
+/*** IMPORTS ***/
+/***************/
+
+@font-face {
+    font-family: "Consolas Regular";
+    src: local("Consolas"), url(assets/fonts/consolas/consola.ttf) format("truetype");
+}
+@font-face {
+    font-family: "Consolas Bold";
+    src: local("Consolas Bold"), url(assets/fonts/consolas/consolab.ttf) format("truetype");
+}
+@font-face {
+    font-family: "Consolas Italic";
+    src: local("Consolas Italic"), url(assets/fonts/consolas/consolai.ttf) format("truetype");
+}
+@font-face {
+    font-family: "Consolas Bold Italic";
+    src: local("Consolas Bold Italic"), url(assets/fonts/consolas/consolaz.ttf) format("truetype");
+}
+
+
+/*****************/
+/*** VARIABLES ***/
+/*****************/
+
+/** Colors **/
+
+$black-light: #333;             // almost black
+
+$grey-dark: #666;               // 40% grey
+$grey-medium: #888;             // 53% grey
+$grey-disabled: #C4C4C4;        // 77% grey
+
+
+
+$yellow-select: #FACD0E;        // select mastery
+$yellow-light: #fbf9cb;       // logo and background
+$yellow-lighter: #fdfcd8;       // logo and background
+
+$green-select: #94D01B;         // select mastery
+
+
+
+
+
+/*******************/
+/*** GENERAL CSS ***/
+/*******************/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: crosshair;
+}
+
+
+ul, li, h1, h2, h3, h4, h5, a, p {       
+    font-family: "Consolas Regular";
+    text-decoration: none;
+    list-style: none;
+}
+
+
+.app-container {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.module-container {
+    // border: 1px solid red;
+    display: flex;
+    height: 100%;
+    background-size: cover;
+
+    .sidebar {
+        // border: 2px solid cyan;
+        background-color: #fffa;
+        width: 18%;
+        min-width: 340px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .logo {
+            min-height: 85px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+            .logo-text {
+                cursor: pointer;
+                width: 60%;
+                margin: 0 auto;
+            }
+        }
+        .user-details {
+            // border: 2px solid green;
+            min-height: 100px;
+            display: flex;
+            padding: 1rem 6rem 1rem 0;
+            justify-content: space-around;
+            align-items: center;
+            cursor: pointer;
+            transition: all 0.2s;
+            img, h2 {
+                cursor: inherit;
+            }
+            // a {
+            //     display: flex;
+            //     flex-direction: column;
+            //     align-items: center;
+            //     width: 13%;
+            //     transition: all 0.2s;
+            //     cursor: pointer;
+            //     font-size: 1rem;
+            //     font-weight: 800;
+            //     opacity: 0.5;
+            //     &:hover {
+            //         opacity: 0.8;
+            //     }
+            //     img {
+            //         display: flex;
+            //     }
+            // }
+        }
+        .lesson-list-name {
+            font-size: 30px;
+            padding: 0 0 1rem 1.3rem;
+        }
+        .lesson-list {
+            // border: 2px solid magenta;
+            box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 9px 0 inset;
+            width: 100%;
+            height: calc(100% - 185px);
+            overflow: auto;
+            padding: 10px 0 0 10px;
+            
+            .subject-name {
+                
+                font-weight: 400;
+                font-size: 24px;
+                font-weight: 400;
+            }
+            .section-name {
+                font-weight: 400;
+                font-size: 20px;
+                padding: 8px 0;
+                padding-left: 1rem;
+            }
+            .unit-name {
+                font-weight: 400;
+                font-size: 18px;
+                padding: 8px 0;
+                padding-left: 1rem;
+            }
+            .post-name {
+                font-weight: 400;
+                padding: 8px 0;
+                padding-left: 1rem;
+                cursor: pointer;
+            }
+            .lesson-name {
+                font-weight: 400;
+                padding: 3px 0;
+                padding-left: 1rem;
+                cursor: pointer;
+                display: flex;
+                width: 70%;
+                
+                transition: all 0.2s;
+                img {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+    .main {
+        width: 82%;
+        display: flex;
+        flex-direction: column;
+        .navbar {
+
+            // border: 1px solid cyan;
+            min-height: 85px;
+            display: flex;
+            align-items: center;
+            a {
+                height: 100%;
+                width: 8%;
+                display: flex;
+                align-items: center;
+            }
+            .icon-home, 
+            .icon-logout {
+                margin: 0 2rem;
+                opacity: 0.7;
+                transition: all 0.2s;
+                width: 60%;
+                &:hover {
+                    opacity: 1;
+                }
+            }
+            .a-logout {
+                // border: 1px solid cyan;
+                position: relative;
+                margin-left: auto;
+            }
+            .breadcrumb {
+                font-family: "Consolas Regular";
+                margin-left: 2rem;
+                letter-spacing: -0.5px;
+                font-size: 1.2rem;
+                color: #666;
+                span {
+                    font-size: 1.3rem;
+                    font-weight: 700;
+                    color: #333;
+                }
+            }
+            .logout {
+                position: absolute;
+                right: 30px;
+                cursor: pointer;
+                font-weight:800;
+                font-size: 1rem;
+                color: rgb(128, 98, 143);
+                letter-spacing: 1px;
+                img {
+                    opacity: 0.4;
+                }
+            }
+        }
+        .lesson {
+            height: 100%;
+            min-height: calc(100vh - 85px);
+            overflow: auto;
+            section {
+                min-height: calc(100% - 140px);
+                padding: 3rem 5rem;
+                .lesson-main {
+                    margin-bottom: 32px; 
+                    * {
+                        margin-bottom: 24px; 
+                    }
+                    h3 {
+                        margin-bottom: 14px;
+                    }
+                    .lesson-text {
+                        width: 75%;
+                    }
+                    .score {
+                        opacity: 0.75;
+                        width: 75%;
+                        background-color: white;
+                        padding: 1rem;
+                        border: 8px solid #ccc;
+                        border-top: none;
+                        border-bottom: none;
+                    }
+                    
+                }
+                .lesson-user-data {
+                    font-family: "Consolas Regular";
+                    display: flex;
+                    * {
+                        font-family: "Consolas Regular";
+                        display: flex;
+                        flex-direction: column;
+                    }
+                    label {
+                        font-size: 1.2rem;
+                        margin-bottom: 12px;
+                    }
+                    #annotations {
+                        padding: 0.5rem;
+                        font-size: 1rem;
+                        margin-right: 4rem;
+                        background-color: #f4f4f4;
+                        border: 3px solid #ccc;
+                        resize: none;
+                    }
+                    #mastery {
+                        border: 3px solid #ccc;
+                        padding: 0.5rem 1rem;
+                        font-size: 1.2rem;
+                        font-family: "Consolas Regular";
+                        background-color: #f4f4f4;
+                    }
+                    
+                    .select-option {
+                        font-family: "Consolas Regular";
+                        font-weight: 400;
+                    }
+                    .select-option:nth-child(1) {
+                        color: $black-light;
+                    }
+                    .select-option:nth-child(2) {
+                        color: red;
+                    }
+                    .select-option:nth-child(3) {
+                        color: $yellow-select;
+                    }
+                    .select-option:nth-child(4) {
+                        color: green;
+                    }
+                    .select-option:nth-child(5) {
+                        color: #2483b2;
+                    }
+                    .btn-mastery {
+                        padding: 0.8rem 3rem;
+                        margin-top: 1.4rem;
+                        text-align: center;
+                    }
+                }
+            } // section
+            .player-container {
+                position: relative;
+                bottom: 0;
+                width: 100%;
+                min-height: 140px;
+                opacity: 0.9;
+                display: flex;
+                align-items: center;
+                padding-left: 5rem;
+                .audio-element {
+                    color: white;
+                    margin-right: 8rem;
+                    .audio-player {
+                        margin-top: 0.6rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.list-number {
+    letter-spacing: -1px;
+    font-size: 0.9em;
+    margin-right: 5px;
+}
+
+.modal-unauthorized {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #333b;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    .error-msg {
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+        h1 {
+            font-family: inherit;
+            font-size: 4.8rem;
+            font-weight: 800;
+            margin: 2rem;
+            color: rgb(243, 148, 148);
+        }
+        h2 {
+            font-family: inherit;
+            font-size: 2.3rem;
+            font-weight: 800;
+            margin: 2rem;
+            margin-bottom: 4rem;
+            color: rgb(196, 145, 145);
+            
+        }
+    }
+
+    .modal-links {
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        // border: 1px solid red;
+        width: 50%;
+        a {
+            display: flex;
+            justify-content: space-around;
+            // border: 1px solid green;
+            margin: 0 auto;
+            img {
+                // border: 1px solid cyan;
+                margin: 0 auto;
+                width: 80%;
+            }
+        }
+
+    }
+}
+
+.modal-delete {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #222e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    .error-msg {
+        width: 70%;
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+        h1 {
+            font-family: inherit;
+            font-size: 4.5rem;
+            font-weight: 800;
+            margin: 2rem;
+            color: rgb(243, 148, 148);
+        }
+        h2 {
+            font-family: inherit;
+            font-size: 2.3rem;
+            font-weight: 800;
+            margin: 2rem;
+            margin-bottom: 4rem;
+            color: rgb(196, 145, 145);
+            
+        }
+    }
+
+    .modal-links {
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        // border: 1px solid red;
+        width: 50%;
+        a {
+            display: flex;
+            justify-content: space-around;
+            // border: 1px solid green;
+            margin: 0 auto;
+            img {
+                // border: 1px solid cyan;
+                margin: 0 auto;
+                width: 80%;
+            }
+        }
+
+    }
+}
+
+// .level-green {
+//     .score {
+//         background-color: white;
+//         padding-left: 1rem;
+//         padding-right: 1rem;
+//         border: 8px solid #5cbc5c;
+//         border-top: none;
+//         border-bottom: none;
+//     }
+//     #annotations {
+//         padding: 0.5rem;
+//         border: 3px solid #5cbc5c;
+//     }
+//     #mastery {
+//         border: 3px solid #5cbc5c;
+//         padding: 0.5rem 1rem;
+//         font-size: 1.2rem;
+//         font-family: "Consolas Regular";
+//         background-color: #f4f4f4;
+//     }
+// }

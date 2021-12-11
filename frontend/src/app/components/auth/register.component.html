@@ -1,0 +1,53 @@
+<div class="module-container">
+  
+  <a class="big-logo" routerLink="/index">
+    <img  src="../../../assets/svg/logo-yellow.svg" alt="">
+  </a>
+
+  <div class="text-center" *ngIf="isLogged; else loggedOut">
+    <h2>You're already logged in!</h2>
+    <div class="btns">
+        <a (click)="logout()"><img src="../../../assets/svg/btn_logout.svg" alt=""></a>
+        <a routerLink="/modules"><img src="../../../assets/svg/btn-modules.svg" alt=""></a>
+    </div>
+  </div>
+
+  <ng-template #loggedOut>
+    <div class="form">
+      <h2>Register New Account</h2>
+      <form #f="ngForm" (ngSubmit)="onRegister()" novalidate>
+        <div class="form-group">
+          <label for="nombre">Full Name</label>
+          <input type="text" name="nombre" id="nombre" class="form-control"
+              [(ngModel)]="nombre" required>
+        </div>
+        <div class="form-group">
+          <label for="nombreUsuario">Username</label>
+          <input type="text" name="nombreUsuario" id="nombreUsuario" class="form-control"
+            [(ngModel)]="nombreUsuario" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" class="form-control"
+            [(ngModel)]="password" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="text" name="email" id="email" class="form-control"
+            [(ngModel)]="email" required>
+        </div>
+        <div class="form-group">
+          <button class="btn-form" [disabled]="!f.valid">
+            Create User
+          </button>
+        </div>
+      </form>
+      <div class="login-icons">
+        <a routerLink="/index"><img src="../../../assets/svg/btn-home.svg" alt=""></a>
+        <a routerLink="/login"><img src="../../../assets/svg/btn-user-login.svg" alt=""></a>
+      </div>
+    </div>
+
+  </ng-template>
+
+</div>

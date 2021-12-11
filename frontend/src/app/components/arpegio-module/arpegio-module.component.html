@@ -1,0 +1,113 @@
+<div class="module-container">
+
+    <section class="modal-unauthorized" *ngIf="!isLogged">
+        <div class="error-msg">
+            <h1>MODULE NOT AVAILABLE FOR GUESTS</h1>
+            <h2>PLEASE SELECT AN OPTION BELOW</h2>
+        </div>
+        <div class="modal-links">
+            <a routerLink="/login"><img src="../../../assets/svg/btn-user-login.svg" alt=""></a>
+            <a routerLink="/register"><img src="../../../assets/svg/btn-user-new.svg" alt=""></a>
+            <a routerLink="/modules"><img src="../../../assets/svg/btn-user-guest.svg" alt=""></a>
+        </div>
+    </section>
+
+    <div class="sidebar">
+        <div routerLink="/index" class="logo">
+            <img class="logo-text" src="../../../assets/images/logo-lilac.png" alt="">
+        </div>
+        <div class="user-details" *ngIf="isLogged" routerLink="/user">
+            <img class="user-image" src="{{ userImage }}" alt="user">
+            <h2 >{{ userName }}</h2>
+        </div>
+
+        <div class="lesson-list">
+            <h2 *ngFor="let subject of data, let subjectIndex = index" class="subject-name"
+                (click)="subjectClicked(subject.subjectName)">
+                <span class="list-number">{{ subjectIndex + 1  }}</span>
+                {{ subject.subjectName }}
+                <h3 class="section-name"
+                    *ngFor="let section of subject.sectionList" 
+                    (click)="sectionClicked(section.sectionName)">
+                    <span class="list-number">{{ subjectIndex + 1 + "." + section.sectionOrder + "" }}</span>
+                    {{ section.sectionName  }}
+                    <h4 class="unit-name"
+                        *ngFor="let unit of section.unitList"
+                        (click)="unitClicked(unit.unitName)">
+                        <span class="list-number">{{ subjectIndex + 1 + "." + section.sectionOrder + "." + unit.unitOrder + " " }}</span>{{ unit.unitName  }}
+                        <h5 class="post-name"
+                            (click)="postClicked(unit.introduction)">
+                            {{ unit.introduction.postTitle }}
+                        </h5>
+                            <div class="lesson-list-item">
+                                <h5 class="lesson-name"
+                                *ngFor="let lesson of unit.lessonList, let i = index"
+                                (click)="lessonClicked(lesson.id, i)">
+                                <!-- <img src="{{ masteryIconArray[0] }}" alt="mastery icon"> -->
+                                {{ i+1 + ". "+ lesson.lessonTitle  }}
+                            </h5>
+                        </div>
+                    </h4>
+                </h3>
+            </h2>
+        </div>
+    </div>
+
+    <main class="main">
+        <nav class="navbar">
+            <a routerLink="/modules"><img class="icon-home" src="../../../assets/svg/btn-home.svg" alt="home"></a>
+            <div class="breadcrumb" *ngIf="lessonId !== undefined">
+                Scales \ {{ breadcrumbs }} <span>{{ lessonTitle }}</span> 
+            </div>
+            <a class="a-logout" (click)="logout()"><img class="icon-logout" src="../../../assets/svg/btn_logout.svg" alt="user"></a>
+        </nav>
+
+        <div class="lesson" *ngIf="lessonId !== undefined">
+            <section [ngClass]="
+                { 
+                    'level-grey': masterySelectedValue == 0,
+                    'level-red': masterySelectedValue == 1,
+                    'level-yellow': masterySelectedValue == 2,
+                    'level-green': masterySelectedValue == 3,
+                    'level-blue': masterySelectedValue == 4
+                }">
+                <div class="lesson-main">
+                    <h1 class="lesson-title">Exercise {{ lessonIndex }} : {{ lessonTitle }}</h1>
+                    <p class="lesson-text">{{ lessonText }}</p>
+                    <img class="score" src="{{ lessonImage }}" alt="musical score">
+                    <h3>Indications: </h3>
+                    <p class="lesson-advice">{{ lessonAdvice }}</p>
+                </div>
+                <div class="lesson-user-data">
+                    <div class="user-data-text">
+                        <label for="annotations">Annotations</label>
+                        <textarea name="annotations" id="annotations" maxlength="255" cols="51" rows="5" [(ngModel)]="lessonAnnotation"></textarea>
+                    </div>
+                    <div class="user-data-select">
+                        <label for="mastery">Mastery Level</label>
+                        <select name="mastery" id="mastery" [(ngModel)]="masterySelectedValue">
+                            <option class="select-option" *ngFor="let v of masteryValues" [ngValue]="v.id">{{v.name}}</option>
+                        </select>
+                        <button class="btn-mastery" (click)="saveLessonData(lessonId)">Save Annotation & Level</button>
+                    </div>
+                </div>
+
+            </section>
+            
+            <div class="player-container" *ngIf="lessonAudioSlow !== undefined || lessonAudioFast !== undefined">
+                <div class="audio-element">
+                    <h3 class="audio-title">Exercise 100bpm</h3>
+                    <audio class="audio-player" controls  src="{{ lessonAudioSlow }}" type="audio/mp3">
+                        Your browser does not support the audio tag.
+                    </audio> 
+                </div>
+                <div class="audio-element">
+                    <h3 class="audio-title">Exercise 150bpm</h3>
+                    <audio class="audio-player" controls  src="{{ lessonAudioFast }}" type="audio/mp3">
+                        Your browser does not support the audio tag.
+                    </audio> 
+                </div>
+            </div>
+        </div>
+    </main>
+</div>

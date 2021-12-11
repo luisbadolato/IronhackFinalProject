@@ -1,0 +1,114 @@
+* {
+    font-family: "Consolas Regular";
+}
+.module-container {
+    background-image: url("../../../assets/images/bg_home.png");
+    display: flex;
+    flex-direction: column;
+    
+    width: 100%;
+    // border: 5px solid blue;
+    .big-logo {
+        align-self: flex-end;
+        // border: 1px solid red;
+        width: 50%;
+        margin-top: 8vh;
+        margin-right: 10vw;
+        img {
+            width: 100%;
+        }
+    }
+
+    .text-center {
+        margin: 10vh auto;
+        width: 40%;
+        // border: 2px solid red;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h2 {
+            padding: 1rem 1.5rem;
+            // color: #333;
+            // border: 5px solid #666;
+            // background-color: #6663;
+            border: 4px solid red;
+            color: red;
+            background-color: #fac3c399;
+            font-size: 2.5rem;
+            font-family: "Consolas Bold";
+            text-align:center;
+        }
+        .btns {
+            display:flex;
+            flex-direction: row;
+        }
+        a{  
+            display:flex;
+            flex-direction: row;
+            width: 100%;
+            // border: 2px solid red;
+            margin: 3rem auto;
+            img {
+                width: 65%;
+                margin: 0 auto;
+                cursor: pointer;
+            }
+        }
+    }
+    
+    .form {
+        margin: 10vh auto;
+        width: 25%;
+
+        h2 {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group {
+            
+            width: 100%;
+            label {
+                width: 0%;
+                font-size: 1.5rem;
+            }
+            input {
+                font-size: 1.2rem;
+                width: 100%;
+                padding: 0.7rem 1rem;
+                margin-bottom: 1.5rem;
+            }
+            .btn-form {
+                width: 100%;
+                padding: 1rem;
+            }
+        }
+        .login-icons {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            // border: 1px solid cyan;
+            width: 90%;
+            margin: 2rem auto 0;
+            a {
+                display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+                width: 35%;
+                // border: 1px solid green;
+
+            }
+            img {
+                // border: 1px solid red;
+                width: 100%;
+            }
+        }
+        .alert {
+            padding: 1rem;
+            margin-top: 2rem;
+            border: 3px solid red;
+            color: red;
+            background-color: #fac3c399;
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,115 @@
+$red-select: #E05050;           // select mastery
+$red-medium: #CB6565;           // player buttons
+$red-light: #FAE1E1;            // logo sidebar
+$red-light-op80: #FAE1E1cc;            // logo sidebar
+$red-light-op60: #FAE1E1aa;            // logo sidebar
+$red-lighter: #FBF1F1;         // background color / footer bg -> 80% opacity
+$red-lighter-op60: #FBF1F1aa;         // background color / footer bg -> 80% opacity
+$red-lighter-op40: #FBF1F166;         // background color / footer bg -> 80% opacity
+$red-breadcrumb: #FCF8F8;       // breadcrumbs bar
+
+.module-container {
+    background-image: url("../../../assets/images/bg_scales.png");
+    .sidebar {
+        border-right: 4px solid $red-light;
+        .logo {
+            background-color: $red-lighter;
+        }
+        .user-details {
+            transition: all 0.2s;
+            &:hover {
+                background-color: $red-lighter-op60;
+            }
+        }
+        .lesson-list {
+            .lesson-name {
+                transition: all 0.2s;
+                &:hover {
+                    background-color: $red-light-op60;
+                }
+            }
+        }
+    }
+    .main {
+        .navbar {
+            background-color: $red-lighter-op60;
+        }
+        .lesson {
+            .player-container {
+                background-color: $red-medium;
+            }
+        }
+
+        // Lesson Class Colorsss
+        .level-red {
+            .score {
+                border: 8px solid #f5745e;
+                border-top: none;
+                border-bottom: none;
+            }
+            #annotations {
+                border: 3px solid #f5745e;
+            }
+            #mastery {
+                border: 3px solid #f5745e;
+            }
+            .btn-mastery {
+                border: 2px solid #999;
+                background-color: #f5745edd;
+            }
+        }
+        .level-yellow {
+            .score {
+                border: 8px solid #f5e33f;
+                border-top: none;
+                border-bottom: none;
+            }
+            #annotations {
+                border: 3px solid #f5e33f;
+            }
+            #mastery {
+                border: 3px solid #f5e33f;
+            }
+            .btn-mastery {
+                border: 2px solid #999;
+                background-color: #f5e33fdd;
+            }
+        }
+        .level-green {
+            .score {
+                border: 8px solid #5cbc5c;
+                border-top: none;
+                border-bottom: none;
+            }
+            #annotations {
+                border: 3px solid #5cbc5c;
+            }
+            #mastery {
+                border: 3px solid #5cbc5c;
+            }
+            .btn-mastery {
+                border: 2px solid #999;
+                background-color: #5cbc5cdd;
+            }
+        }
+        .level-blue {
+            .score {
+                border: 8px solid #5893f1;
+                border-top: none;
+                border-bottom: none;
+            }
+            #annotations {
+                border: 3px solid #5893f1;
+            }
+            #mastery {
+                border: 3px solid #5893f1;
+            }
+            .btn-mastery {
+                border: 2px solid #999;
+                background-color: #5893f1dd;
+            }
+        }
+
+    }
+}
+
