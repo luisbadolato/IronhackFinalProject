@@ -2,7 +2,7 @@
 	- Ironhack Bootcamp Final Project -
     <br />
     <br />
-</h2>
+   </h2>
 
 <p align="center">
 	<img src="https://i.imgur.com/ebWGfYA.png">
