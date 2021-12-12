@@ -103,7 +103,6 @@ GET http://localhost:8080/users/name/{nombreUsuario}
 DELETE http://localhost:8080/users/name/{nombreUsuario}
 ``
 
-<br />
 ### Lesson user data routes: 
 
 ``
