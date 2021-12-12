@@ -36,6 +36,7 @@
 
 
 <!-- ABOUT THE PROJECT -->
+<details open="open">
 ## ✏️ About The Project
 
 This project was created as the final project for the Ironhack FullStack Remote Bootcamp to showcase some of the skills adquired during the course. 
@@ -47,7 +48,9 @@ This project was created as the final project for the Ironhack FullStack Remote 
 * 🐬 MySQL
 * ♦️ Angular
 * 💅 Sass
+</details>
 
+<details open="open">
 ## ⚙️ App Structure
 
 The app main functionality comes from four services where the data needed for each of its lessons is stored.
@@ -61,7 +64,9 @@ There's also an Edge / Authorization service that handles the JWT based authoriz
 <p align="center">
 	<img src="https://i.imgur.com/lcF9mgI.png">
 </p>
+</details>
 
+<details open="open">
 <!-- GETTING STARTED -->
 ## ⌨️ Getting Started
 
@@ -88,3 +93,5 @@ In order to run the application you'll have to follow these steps:
 	http://localhost:4200/
 	  ```
 7.  You're all set!
+</details>
+   
