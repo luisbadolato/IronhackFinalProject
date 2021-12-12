@@ -11,9 +11,7 @@
   <h3 align="center">
 	  A guitar learning app that lets you track your progress
     <br />
-   </h3>
-
-
+ </h3>
 
 <!-- TABLE OF CONTENTS -->
 
