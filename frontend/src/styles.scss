@@ -32,8 +32,6 @@ $grey-dark: #666;               // 40% grey
 $grey-medium: #888;             // 53% grey
 $grey-disabled: #C4C4C4;        // 77% grey
 
-
-
 $yellow-select: #FACD0E;        // select mastery
 $yellow-light: #fbf9cb;       // logo and background
 $yellow-lighter: #fdfcd8;       // logo and background
@@ -41,13 +39,9 @@ $yellow-lighter: #fdfcd8;       // logo and background
 $green-select: #94D01B;         // select mastery
 
 
-
-
-
 /*******************/
 /*** GENERAL CSS ***/
 /*******************/
-
 
 * {
     margin: 0;
@@ -56,13 +50,11 @@ $green-select: #94D01B;         // select mastery
     cursor: crosshair;
 }
 
-
 ul, li, h1, h2, h3, h4, h5, a, p {       
     font-family: "Consolas Regular";
     text-decoration: none;
     list-style: none;
 }
-
 
 .app-container {
     height: 100vh;
@@ -70,13 +62,10 @@ ul, li, h1, h2, h3, h4, h5, a, p {
 }
 
 .module-container {
-    // border: 1px solid red;
     display: flex;
     height: 100%;
     background-size: cover;
-
     .sidebar {
-        // border: 2px solid cyan;
         background-color: #fffa;
         width: 18%;
         min-width: 340px;
@@ -97,7 +86,6 @@ ul, li, h1, h2, h3, h4, h5, a, p {
             }
         }
         .user-details {
-            // border: 2px solid green;
             min-height: 100px;
             display: flex;
             padding: 1rem 6rem 1rem 0;
@@ -108,30 +96,12 @@ ul, li, h1, h2, h3, h4, h5, a, p {
             img, h2 {
                 cursor: inherit;
             }
-            // a {
-            //     display: flex;
-            //     flex-direction: column;
-            //     align-items: center;
-            //     width: 13%;
-            //     transition: all 0.2s;
-            //     cursor: pointer;
-            //     font-size: 1rem;
-            //     font-weight: 800;
-            //     opacity: 0.5;
-            //     &:hover {
-            //         opacity: 0.8;
-            //     }
-            //     img {
-            //         display: flex;
-            //     }
-            // }
         }
         .lesson-list-name {
             font-size: 30px;
             padding: 0 0 1rem 1.3rem;
         }
         .lesson-list {
-            // border: 2px solid magenta;
             box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 9px 0 inset;
             width: 100%;
             height: calc(100% - 185px);
@@ -182,8 +152,6 @@ ul, li, h1, h2, h3, h4, h5, a, p {
         display: flex;
         flex-direction: column;
         .navbar {
-
-            // border: 1px solid cyan;
             min-height: 85px;
             display: flex;
             align-items: center;
@@ -204,7 +172,6 @@ ul, li, h1, h2, h3, h4, h5, a, p {
                 }
             }
             .a-logout {
-                // border: 1px solid cyan;
                 position: relative;
                 margin-left: auto;
             }
@@ -289,7 +256,6 @@ ul, li, h1, h2, h3, h4, h5, a, p {
                         font-family: "Consolas Regular";
                         background-color: #f4f4f4;
                     }
-                    
                     .select-option {
                         font-family: "Consolas Regular";
                         font-weight: 400;
@@ -373,21 +339,17 @@ ul, li, h1, h2, h3, h4, h5, a, p {
             
         }
     }
-
     .modal-links {
         margin: 0 auto;
         display: flex;
         justify-content: space-around;
         align-items: center;
-        // border: 1px solid red;
         width: 50%;
         a {
             display: flex;
             justify-content: space-around;
-            // border: 1px solid green;
             margin: 0 auto;
             img {
-                // border: 1px solid cyan;
                 margin: 0 auto;
                 width: 80%;
             }
@@ -427,21 +389,17 @@ ul, li, h1, h2, h3, h4, h5, a, p {
             
         }
     }
-
     .modal-links {
         margin: 0 auto;
         display: flex;
         justify-content: space-around;
         align-items: center;
-        // border: 1px solid red;
         width: 50%;
         a {
             display: flex;
             justify-content: space-around;
-            // border: 1px solid green;
             margin: 0 auto;
             img {
-                // border: 1px solid cyan;
                 margin: 0 auto;
                 width: 80%;
             }
@@ -449,25 +407,3 @@ ul, li, h1, h2, h3, h4, h5, a, p {
 
     }
 }
-
-// .level-green {
-//     .score {
-//         background-color: white;
-//         padding-left: 1rem;
-//         padding-right: 1rem;
-//         border: 8px solid #5cbc5c;
-//         border-top: none;
-//         border-bottom: none;
-//     }
-//     #annotations {
-//         padding: 0.5rem;
-//         border: 3px solid #5cbc5c;
-//     }
-//     #mastery {
-//         border: 3px solid #5cbc5c;
-//         padding: 0.5rem 1rem;
-//         font-size: 1.2rem;
-//         font-family: "Consolas Regular";
-//         background-color: #f4f4f4;
-//     }
-// }

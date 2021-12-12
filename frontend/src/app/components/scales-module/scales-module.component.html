@@ -43,7 +43,6 @@
                                 <h5 class="lesson-name"
                                 *ngFor="let lesson of unit.lessonList, let i = index"
                                 (click)="lessonClicked(lesson.id, i)">
-                                <!-- <img src="{{ masteryIconArray[0] }}" alt="mastery icon"> -->
                                 {{ i+1 + ". "+ lesson.lessonTitle  }}
                             </h5>
                         </div>

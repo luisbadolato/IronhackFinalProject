@@ -66,7 +66,7 @@ export class UserPageComponent implements OnInit {
     this.appService.deleteUser(this.userName).subscribe();
     window.sessionStorage.clear();
     this.modalOpen = false;
-    // this.router.navigate(['/index']);
+    this.router.navigate(['/index']);
   }
 
   closeModal() {

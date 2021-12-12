@@ -7,10 +7,8 @@
     flex-direction: column;
     
     width: 100%;
-    // border: 5px solid blue;
     .big-logo {
         align-self: flex-end;
-        // border: 1px solid red;
         width: 50%;
         margin-top: 8vh;
         margin-right: 10vw;
@@ -22,15 +20,11 @@
     .text-center {
         margin: 10vh auto;
         width: 40%;
-        // border: 2px solid red;
         display: flex;
         flex-direction: column;
         align-items: center;
         h2 {
             padding: 1rem 1.5rem;
-            // color: #333;
-            // border: 5px solid #666;
-            // background-color: #6663;
             border: 4px solid red;
             color: red;
             background-color: #fac3c399;
@@ -42,11 +36,10 @@
             display:flex;
             flex-direction: row;
         }
-        a{  
+        a {  
             display:flex;
             flex-direction: row;
             width: 100%;
-            // border: 2px solid red;
             margin: 3rem auto;
             img {
                 width: 65%;
@@ -55,17 +48,13 @@
             }
         }
     }
-    
     .form {
         margin: 10vh auto;
         width: 25%;
-
         h2 {
             margin-bottom: 1.5rem;
         }
-
         .form-group {
-            
             width: 100%;
             label {
                 width: 0%;
@@ -86,19 +75,15 @@
             display: flex;
             flex-direction: row;
             justify-content: space-around;
-            // border: 1px solid cyan;
             width: 90%;
             margin: 2rem auto 0;
             a {
                 display: flex;
-            flex-direction: row;
-            justify-content: space-between;
+                flex-direction: row;
+                justify-content: space-between;
                 width: 35%;
-                // border: 1px solid green;
-
             }
             img {
-                // border: 1px solid red;
                 width: 100%;
             }
         }

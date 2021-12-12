@@ -57,7 +57,6 @@ export class LoginComponent implements OnInit {
 
   logout() {
     window.sessionStorage.clear();
-    // window.location.reload();
     this.router.navigate(['/index']);
   }
 }
