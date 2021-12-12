@@ -9,7 +9,7 @@
 </p>
    
   <h3 align="center">
-	  A guitar learning app that lets you track your progress
+	  A guitar learning app that lets you track your musical prowess
     <br />
  </h3>
 
@@ -18,7 +18,7 @@
   <summary><h2 style="display: inline-block"> 📋 Table of Contents</h2></summary>
   <ol>
     <li> <a href="#about-the-project">About The Project</a> </li>
-     <li><a href="#app-structure"> App Structure</a></li>
+    <li><a href="#app-structure"> App Structure</a></li>
     <li><a href="#getting-started">Getting Started</a></li>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#contribution">Contribution and Special Thanks</a></li>
@@ -66,14 +66,17 @@ There are also routes for accessing individual or complete subjects, sections, u
 
 
 There's also an Edge / Authorization service that handles the JWT based authorization and the http petitions to the data services coming from the frontend. It also holds all the annotations and feedback that the user can create for each lesson.
+
 <p align="center">
 	<img src="https://i.imgur.com/lcF9mgI.png">
 </p>
 
+<br />
 Most of the http routes in this service require at least user authentication and some of them need administrator role.
 The main routes are:
 
-Authorization routes:
+### Authorization routes:
+
 ``
 POST http://localhost:8080/auth/login (No authorization needed)
 ``
@@ -81,8 +84,9 @@ POST http://localhost:8080/auth/login (No authorization needed)
 ``
 POST http://localhost:8080/auth/nuevo (No authorization needed)
 ``
+<br />
+### User routes:
 
-User routes:
 ``
 GET http://localhost:8080/users/all  (Admin role needed)
 ``
@@ -99,8 +103,9 @@ GET http://localhost:8080/users/name/{nombreUsuario}
 DELETE http://localhost:8080/users/name/{nombreUsuario}
 ``
 
+<br />
+### Lesson user data routes: 
 
-Lesson user data routes: 
 ``
 GET http://localhost:8080/data/user/{id}
 ``
