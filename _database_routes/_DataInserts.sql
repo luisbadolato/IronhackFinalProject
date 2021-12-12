@@ -1,16 +1,149 @@
+USE arpegio_service;
+
+INSERT INTO `subject` (id, subject_name, subject_order, module_name) VALUES
+	(1, "Triads", 1, "ARPEGGIO_MODULE"),
+	(2, "7th Chords", 2, "ARPEGGIO_MODULE");
+
+INSERT INTO `section` (id, section_name, section_order, subject_id) VALUES
+	(1, "Triads in Position", 1, 1),
+	(2, "Triads Sweep Picking", 2, 1),  
+	(3, "7th Chords in Position", 1, 2),
+	(4, "7th Chords Sweep Picking", 2, 2);
+
+INSERT INTO `unit` (id, unit_name, unit_order, section_id) VALUES
+	(1, "Static Harmony", 1, 1),
+	(2, "Diatonic Progression", 2, 1),
+	(3, "Static Harmony", 1, 2),
+    (4, "Diatonic Progression", 2, 2),
+    (5, "Static Harmony", 1, 3),
+    (6, "Diatonic Progression", 2, 3),
+	(7, "Static Harmony", 1, 4),
+	(8, "Diatonic Progression", 2, 4);
+
+INSERT INTO `post`(id, post_title, post_body, unit_id) VALUES
+	(1, "Static Triads in Position", "Let's play some chords...", 1),
+	(2, "Diatonic Triads in Position", "Let's play some chords...", 2),
+	(3, "Static Triads Sweep", "Let's play some chords...", 3),
+	(4, "Diatonic Triads Sweep", "Let's play some chords...", 4),
+	(5, "Static 7th Chords in Position", "Let's play some chords...", 5),
+	(6, "Diatonic 7th Chords in Position", "Let's play some chords...", 6),
+	(7, "Static 7th Chords Sweep Picking", "Let's play some chords...", 7),
+	(8, "Diatonic 7th Chords Sweep Picking", "Let's play some chords...", 8);
+
+INSERT INTO `lesson`(lesson_title, text_body, image_url, advice_text, audio_slow_url, audio_fast_url, unit_id) VALUES
+	("C Triad in Position", "In this lesson we will work something...", "https://i.imgur.com/lJTLQU4.png", "// Play as smoothly as possible.", "../assets/audios/arpeggios/100bpm/ex1.mp3", "../assets/audios/arpeggios/150bpm/ex1.mp3", 1),
+	("Cm Triad in Position", "In this lesson we will work something...", "https://i.imgur.com/5Y2bU4A.png", "// Play as smoothly as possible.", "../assets/audios/arpeggios/100bpm/ex2.mp3", "../assets/audios/arpeggios/150bpm/ex2.mp3", 1),
+	("Triads in Position in C Major Key", "In this lesson we will work something...", "https://i.imgur.com/ZJ72YtM.png", "// Play as smoothly as possible.", "../assets/audios/arpeggios/100bpm/ex3.mp3", "../assets/audios/arpeggios/150bpm/ex3.mp3", 2),
+	("C Triad Sweep Picking", "In this lesson we will work something...", "https://i.imgur.com/SjyIbdD.png", "// Play as smoothly as possible.", "../assets/audios/arpeggios/100bpm/ex4.mp3", "../assets/audios/arpeggios/150bpm/ex4.mp3", 3),
+	("Cm Triad Sweep Picking", "In this lesson we will work something...", "https://i.imgur.com/jgeaqZ6.png", "// Play as smoothly as possible.", "../assets/audios/arpeggios/100bpm/ex5.mp3", "../assets/audios/arpeggios/150bpm/ex5.mp3", 3),
+	("Triads Sweep Picking in C Major", "In this lesson we will work something...", "https://i.imgur.com/IV3Zi9C.png", "// Play as smoothly as possible.", "../assets/audios/arpeggios/100bpm/ex6.mp3", "../assets/audios/arpeggios/150bpm/ex6.mp3", 4),
+	("CMaj7 in Position", "In this lesson we will work something...", "https://i.imgur.com/WtZePfU.png", "// Play as smoothly as possible.", "../assets/audios/arpeggios/100bpm/ex7.mp3", "../assets/audios/arpeggios/150bpm/ex7.mp3", 5),
+	("C7 in Position", "In this lesson we will work something...", "https://i.imgur.com/QcB9fJu.png", "// Play as smoothly as possible.", "../assets/audios/arpeggios/100bpm/ex8.mp3", "../assets/audios/arpeggios/150bpm/ex8.mp3", 5),
+	("Cm7 in Position", "In this lesson we will work something...", "https://i.imgur.com/jRQjEfo.png", "// Play as smoothly as possible.", "../assets/audios/arpeggios/100bpm/ex9.mp3", "../assets/audios/arpeggios/150bpm/ex9.mp3", 5),
+    ("Cm7b5 in Position", "In this lesson we will work something...", "https://i.imgur.com/l6RjcwH.png", "// Play as smoothly as possible.", "../assets/audios/arpeggios/100bpm/ex10.mp3", "../assets/audios/arpeggios/150bpm/ex10.mp3", 5),
+	("7th Chords in Position in C Major Key", "In this lesson we will work something...", "https://i.imgur.com/4wUvPi9.png", "// Play as smoothly as possible.", "../assets/audios/arpeggios/100bpm/ex11.mp3", "../assets/audios/arpeggios/150bpm/ex11.mp3", 6),
+	("CMaj7 Sweep Picking", "In this lesson we will work something...", "https://i.imgur.com/ebl6DhO.png", "// Play as smoothly as possible.", "../assets/audios/arpeggios/100bpm/ex12.mp3", "../assets/audios/arpeggios/150bpm/ex12.mp3", 7),
+    ("C7 Sweep Picking", "In this lesson we will work something...", "https://i.imgur.com/bu58JLe.png", "// Play as smoothly as possible.", "../assets/audios/arpeggios/100bpm/ex13.mp3", "../assets/audios/arpeggios/150bpm/ex13.mp3", 7),
+	("Cm7 Sweep Picking", "In this lesson we will work something...", "https://i.imgur.com/gMPeQFX.png", "// Play as smoothly as possible.", "../assets/audios/arpeggios/100bpm/ex14.mp3", "../assets/audios/arpeggios/150bpm/ex14.mp3", 7),
+	("Cm7b5 Sweep Picking", "In this lesson we will work something...", "https://i.imgur.com/dwLty9w.png", "// Play as smoothly as possible.", "../assets/audios/arpeggios/100bpm/ex15.mp3", "../assets/audios/arpeggios/150bpm/ex15.mp3", 7),
+	("7th Chords Sweep Picking in C Major Key", "In this lesson we will work something...", "https://i.imgur.com/Q94beBg.png", "// Play as smoothly as possible.", "../assets/audios/arpeggios/100bpm/ex16.mp3", "../assets/audios/arpeggios/150bpm/ex16.mp3", 8)
+;	
+
+USE chords_service;
+
+INSERT INTO `subject` (id, subject_name, subject_order, module_name) VALUES
+	(1, "Triads", 1, "CHORDS_MODULE"),
+	(2, "7th Chords", 2, "CHORDS_MODULE");
+
+INSERT INTO `section` (id, section_name, section_order, subject_id) VALUES
+	(1, "Triads Closed", 1, 1),
+	(2, "Triads Open", 2, 1),  
+	(3, "7th Chords Drop2", 1, 2),
+	(4, "7th Chords Drop3", 2, 2)
+;
+
+INSERT INTO `unit` (id, unit_name, unit_order, section_id) VALUES
+	(1, "Static Harmony", 1, 1),
+	(2, "Diatonic Progression", 2, 1),
+	(3, "Static Harmony", 1, 2),
+    (4, "Diatonic Progression", 2, 2),
+    (5, "Static Harmony", 1, 3),
+    (6, "Diatonic Progression", 2, 3),
+	(7, "Static Harmony", 1, 4),
+	(8, "Diatonic Progression", 2, 4)
+;
+
+INSERT INTO `post`(id, post_title, post_body, unit_id) VALUES
+	(1, "Static Closed Triads", "Let's play some chords...", 1),
+	(2, "Diatonic Closed Triads", "Let's play some chords...", 2),
+	(3, "Static Open Triads", "Let's play some chords...", 3),
+	(4, "Diatonic Open Triads", "Let's play some chords...", 4),
+	(5, "Static Drop2 7th Chords", "Let's play some chords...", 5),
+	(6, "Diatonic Drop2 7th Chords", "Let's play some chords...", 6),
+	(7, "Static Drop3 7th Chords", "Let's play some chords...", 7),
+	(8, "Diatonic Drop3 7th Chords", "Let's play some chords...", 8)
+;
+
+INSERT INTO `lesson` (lesson_title, text_body, image_url, advice_text, audio_slow_url, audio_fast_url, unit_id) VALUES
+	("C Closed Triad", "In this lesson we will work something...", "https://i.imgur.com/8YqID9D.png", "// Play as smoothly as possible.", "../assets/audios/chords/70bpm/ex1.mp3", "../assets/audios/chords/110bpm/ex1.mp3", 1),
+	("Cm Closed Triad", "In this lesson we will work something...", "https://i.imgur.com/XK40ANm.png", "// Play as smoothly as possible.", "../assets/audios/chords/70bpm/ex2.mp3", "../assets/audios/chords/110bpm/ex2.mp3", 1),
+	("Closed Triads in C Major Key", "In this lesson we will work something...", "https://i.imgur.com/CQpdM6Q.png", "// Play as smoothly as possible.", "../assets/audios/chords/70bpm/ex3.mp3", "../assets/audios/chords/110bpm/ex3.mp3", 2),
+	("C Open Triad", "In this lesson we will work something...", "https://i.imgur.com/TmHoIay.png", "// Play as smoothly as possible.", "../assets/audios/chords/70bpm/ex4.mp3", "../assets/audios/chords/110bpm/ex4.mp3", 3),
+	("Cm Open Triad", "In this lesson we will work something...", "https://i.imgur.com/P38IkWy.png", "// Play as smoothly as possible.", "../assets/audios/chords/70bpm/ex5.mp3", "../assets/audios/chords/110bpm/ex5.mp3", 3),
+	("Open Triads in C Major Key", "In this lesson we will work something...", "https://i.imgur.com/Fw2oIou.png", "// Play as smoothly as possible.", "../assets/audios/chords/70bpm/ex6.mp3", "../assets/audios/chords/110bpm/ex6.mp3", 4),
+	("CMaj7 Drop2", "In this lesson we will work something...", "https://i.imgur.com/sBxpFIs.png", "// Play as smoothly as possible.", "../assets/audios/chords/70bpm/ex7.mp3", "../assets/audios/chords/110bpm/ex7.mp3", 5),
+	("C7 Drop2", "In this lesson we will work something...", "https://i.imgur.com/gYAlg5n.png", "// Play as smoothly as possible.", "../assets/audios/chords/70bpm/ex8.mp3", "../assets/audios/chords/110bpm/ex8.mp3", 5),
+	("Cm7 Drop2", "In this lesson we will work something...", "https://i.imgur.com/fh8qjXh.png", "// Play as smoothly as possible.", "../assets/audios/chords/70bpm/ex9.mp3", "../assets/audios/chords/110bpm/ex9.mp3", 5),
+    ("Cm7b5 Drop2", "In this lesson we will work something...", "https://i.imgur.com/aRKrnzF.png", "// Play as smoothly as possible.", "../assets/audios/chords/70bpm/ex10.mp3", "../assets/audios/chords/110bpm/ex10.mp3", 5),
+	("7th Chords Drop2 in C Major", "In this lesson we will work something...", "https://i.imgur.com/ndQ5lTt.png", "// Play as smoothly as possible.", "../assets/audios/chords/70bpm/ex11.mp3", "../assets/audios/chords/110bpm/ex11.mp3", 6),
+	("CMaj7 Drop3", "In this lesson we will work something...", "https://i.imgur.com/Y9LkX5W.png", "// Play as smoothly as possible.", "../assets/audios/chords/70bpm/ex12.mp3", "../assets/audios/chords/110bpm/ex12.mp3", 7),
+    ("C7 Drop3", "In this lesson we will work something...", "https://i.imgur.com/AIIq6Xu.png", "// Play as smoothly as possible.", "../assets/audios/chords/70bpm/ex13.mp3", "../assets/audios/chords/110bpm/ex13.mp3", 7),
+	("Cm7 Drop3", "In this lesson we will work something...", "https://i.imgur.com/myWiIua.png", "// Play as smoothly as possible.", "../assets/audios/chords/70bpm/ex14.mp3", "../assets/audios/chords/110bpm/ex14.mp3", 7),
+	("Cm7b5 Drop3", "In this lesson we will work something...", "https://i.imgur.com/iDjNaIB.png", "// Play as smoothly as possible.", "../assets/audios/chords/70bpm/ex15.mp3", "../assets/audios/chords/110bpm/ex15.mp3", 7),
+	("7th Chords Drop3 in C Major", "In this lesson we will work something...", "https://i.imgur.com/02dHnKq.png", "// Play as smoothly as possible.", "../assets/audios/chords/70bpm/ex16.mp3", "../assets/audios/chords/110bpm/ex16.mp3", 8)
+;	
+
+USE theory_service;
+
+INSERT INTO `subject` (id, subject_name, subject_order, module_name) VALUES
+	(1, "Basic Theory", 1, "THEORY_MODULE");
+
+INSERT INTO `section` (id, section_name, section_order, subject_id) VALUES
+	(1, "Musical Notation", 1, 1),
+	(2, "Music Concepts", 2, 1);
+
+INSERT INTO `unit` (id, unit_name, unit_order, section_id) VALUES
+	(1, "Basic Figures", 1, 1),
+	(2, "Guitar Tablature", 2, 1),
+	(3, "Rhythm", 1, 2),
+    (4, "Tonalities", 2, 2);
+
+INSERT INTO `post` (id, post_title, post_body, unit_id) VALUES
+	(1, "Basic Figures", "Let's talk about figures...", 1),
+	(2, "Guitar Tablature", "Let's explain guitar tablature...", 2),
+	(3, "Rhythm", "Let's talk about rhythm...", 3),
+	(4, "Tonalities", "Let's talk about Tonalities...", 4);
+
+INSERT INTO `lesson` (lesson_title, text_body, image_url, advice_text, audio_slow_url, audio_fast_url, unit_id) VALUES
+	("Musical Figures", "A musical figure is a musical symbol that represents the length of a given note. In Music they are also known as rhythmic figures or positive values. In this sense, the Musical Academy currently recognizes seven musical figures, which are classified according to the time each of them.", "https://i.imgur.com/lJTLQU4.png", "// Play as smoothly as possible.", "", "", 1),
+	("More Musical Figures", "Likewise each of these figures have their corresponding musical silence, which has the same time of the musical figure to which it is linked, as well as its own symbol, which placed in a specific position on the staff will indicate where and by how much time to make a silence in the execution of the melody.", "https://i.imgur.com/5Y2bU4A.png", "// Play as smoothly as possible.", "", "", 1),
+	("Tablature Definition", "Guitar tablature, usually referred to as “tab”, is a method of notating music that empowers beginner guitarists to learn songs quickly and easily. Guitar tabs share similarities with music staff notation by showing you what notes to play, how long to play them, and what techniques to use.", "https://i.imgur.com/ZJ72YtM.png", "// Play as smoothly as possible.", "", "", 2),
+	("Tablature Examples", "In this lesson we will work something...", "https://i.imgur.com/SjyIbdD.png", "// Play as smoothly as possible.", "", "", 2),
+	("Rhythm Definition", "Rhythm is music's pattern in time. Whatever other elements a given piece of music may have (e.g., patterns in pitch or timbre), rhythm is the one indispensable element of all music. ... In music that has both harmony and melody, the rhythmic structure cannot be separated from them.", "https://i.imgur.com/jgeaqZ6.png", "// Play as smoothly as possible.", "", "", 3),
+	("Time Signatures", "The time signature indicates how many counts are in each measure and which type of note will receive one count. The top number is commonly 2, 3, 4, or 6. The bottom number is either 4 or 8. Simple time signatures divide music into groups of 2 and compound divide music into groups of 3", "https://i.imgur.com/IV3Zi9C.png", "// Play as smoothly as possible.", "", "", 3),
+	("Tonality Definition", "Tonality is an organized system of tones (e.g., the tones of a major or minor scale) in which one tone (the tonic) becomes the central point for the remaining tones. The other tones in a tonal piece are all defined in terms of their relationship to the tonic. ", "https://i.imgur.com/WtZePfU.png", "// Play as smoothly as possible.", "", "", 4),
+	("Accidentals", "Accidental, in music, sign placed immediately to the left of (or above) a note to show that the note must be changed in pitch. ... Sharps or flats that are placed at the beginning of a musical staff, called a key signature, indicate the tonality, or key, of the music and are not considered accidentals", "https://i.imgur.com/QcB9fJu.png", "// Play as smoothly as possible.", "", "", 4)
+;	
+
 USE scales_service;
 
-INSERT INTO `subject` 
-	(id, subject_name, subject_order, module_name) 
-VALUES
+INSERT INTO `subject` (id, subject_name, subject_order, module_name) VALUES
 	(1, "Pentatonic", 1, "SCALES_MODULE"),
 	(2, "Major & Modes", 2, "SCALES_MODULE"),
 	(3, "Melodic Minor & Modes", 3, "SCALES_MODULE"),
 	(4, "Diminished Half Whole", 4, "SCALES_MODULE");
 
-INSERT INTO `section` 
-	(id, section_name, section_order, subject_id) 
-VALUES
+INSERT INTO `section` (id, section_name, section_order, subject_id) VALUES
 -- Pentatonic --
 	(1, "Pentatonic Minor Basic", 1, 1),
 	(2, "Pentatonic Minor Diagonal", 2, 1),
@@ -27,9 +160,7 @@ VALUES
 	(10, "Diminished Vertical Positions", 1, 4)
 ;
 
-INSERT INTO `unit` 
-	(id, unit_name, unit_order, section_id) 
-VALUES
+INSERT INTO `unit` (id, unit_name, unit_order, section_id) VALUES
 -- Pentatonic Minor Basic --
 	(1, "Linear Run", 1, 1),
 	(2, "Sequence 4 Notes", 2, 1),
@@ -65,9 +196,7 @@ VALUES
 	(23, "Intervals", 2, 10)
 ;
 
-INSERT INTO `post`
-	(id, post_title, post_body, unit_id)
-VALUES
+INSERT INTO `post` (id, post_title, post_body, unit_id) VALUES
 	(1, "Intro to Linear Runs", "Linear Runs are a great exercise to warm up and to learn the basic positions of a scale...", 1),
 	(2, "Intro to Linear Runs", "Linear Runs are a great exercise to warm up and to learn the basic positions of a scale...", 4),
 	(3, "Intro to Linear Runs", "Linear Runs are a great exercise to warm up and to learn the basic positions of a scale...", 6),
@@ -91,12 +220,6 @@ VALUES
 	(21, "Intro to Intervals", "Intervals are quite useful to develop exceptional technique skills...", 12),
 	(22, "Intro to Intervals", "Intervals are quite useful to develop exceptional technique skills...", 19),
 	(23, "Intro to Intervals", "Intervals are quite useful to develop exceptional technique skills...", 23)
-    /*
-	(24, "Conclusion", "Now you should try to play this exercises in other keys...", 11),
-	(25, "Conclusion", "Now you should try to play this exercises in other keys...", 20),
-	(26, "Conclusion", "Now you should try to play this exercises in other keys...", 41),
-	(27, "Conclusion", "Now you should try to play this exercises in other keys...", 90)
-    */
 ;
 
 INSERT INTO `lesson`
@@ -211,185 +334,3 @@ VALUES
 	("C Position 1 3as", "In this lesson we will work something...", "https://i.imgur.com/0tcZihs.png", "// Play as smoothly as possible.", "../assets/audios/scales/100bpm/ex83.mp3", "../assets/audios/scales/150bpm/ex83.mp3", 23),
 	("G Position 2 6as", "In this lesson we will work something...", "https://i.imgur.com/PAPjTvs.png", "// Play as smoothly as possible.", "../assets/audios/scales/100bpm/ex84.mp3", "../assets/audios/scales/150bpm/ex84.mp3", 23)
 ;	
-
-/*
-
-INSERT INTO `lesson_audio`
-	(`name`, `info`)
-VALUES
-	("ex1","exercise"),
-	("ex2","exercise"),
-	("ex3","exercise"),
-	("ex4","exercise"),
-	("ex5","exercise"),
-	("ex6","exercise"),
-	("ex7","exercise"),
-	("ex8","exercise"),
-	("ex9","exercise"),
-	("ex10","exercise"),
-    ("ex11","exercise"),
-	("ex12","exercise"),
-	("ex13","exercise"),
-	("ex14","exercise"),
-	("ex15","exercise"),
-	("ex16","exercise"),
-	("ex17","exercise"),
-	("ex18","exercise"),
-	("ex19","exercise"),
-	("ex20","exercise"),
-    ("ex21","exercise"),
-	("ex22","exercise"),
-	("ex23","exercise"),
-	("ex24","exercise"),
-	("ex25","exercise"),
-	("ex26","exercise"),
-	("ex27","exercise"),
-	("ex28","exercise"),
-	("ex29","exercise"),
-	("ex30","exercise"),
-    ("ex31","exercise"),
-	("ex32","exercise"),
-	("ex33","exercise"),
-	("ex34","exercise"),
-	("ex35","exercise"),
-	("ex36","exercise"),
-	("ex37","exercise"),
-	("ex38","exercise"),
-	("ex39","exercise"),
-	("ex40","exercise"),
-    ("ex41","exercise"),
-	("ex42","exercise"),
-	("ex43","exercise"),
-	("ex44","exercise"),
-	("ex45","exercise"),
-	("ex46","exercise"),
-	("ex47","exercise"),
-	("ex48","exercise"),
-	("ex49","exercise"),
-	("ex50","exercise"),
-    ("ex51","exercise"),
-	("ex52","exercise"),
-	("ex53","exercise"),
-	("ex54","exercise"),
-	("ex55","exercise"),
-	("ex56","exercise"),
-	("ex57","exercise"),
-	("ex58","exercise"),
-	("ex59","exercise"),
-	("ex60","exercise"),
-    ("ex61","exercise"),
-	("ex62","exercise"),
-	("ex63","exercise"),
-	("ex64","exercise"),
-	("ex65","exercise"),
-	("ex66","exercise"),
-	("ex67","exercise"),
-	("ex68","exercise"),
-	("ex69","exercise"),
-	("ex70","exercise"),
-    ("ex71","exercise"),
-	("ex72","exercise"),
-	("ex73","exercise"),
-	("ex74","exercise"),
-	("ex75","exercise"),
-	("ex76","exercise"),
-	("ex77","exercise"),
-	("ex78","exercise"),
-	("ex79","exercise"),
-	("ex80","exercise"),
-    ("ex81","exercise"),
-	("ex82","exercise"),
-	("ex83","exercise"),
-	("ex84","exercise")
-;
-
-INSERT INTO `lesson_has_audio`
-	(`lesson_id`, `audio_id`)
-VALUES
-(1,1),
-(2,2),
-(3,3),
-(4,4),
-(5,5),
-(6,6),
-(7,7),
-(8,8),
-(9,9),
-(10,10),
-(11,11),
-(12,12),
-(13,13),
-(14,14),
-(15,15),
-(16,16),
-(17,17),
-(18,18),
-(19,19),
-(20,20),
-(21,21),
-(22,22),
-(23,23),
-(24,24),
-(25,25),
-(26,26),
-(27,27),
-(28,28),
-(29,29),
-(30,30),
-(31,31),
-(32,32),
-(33,33),
-(34,34),
-(35,35),
-(36,36),
-(37,37),
-(38,38),
-(39,39),
-(40,40),
-(41,41),
-(42,42),
-(43,43),
-(44,44),
-(45,45),
-(46,46),
-(47,47),
-(48,48),
-(49,49),
-(50,50),
-(51,51),
-(52,52),
-(53,53),
-(54,54),
-(55,55),
-(56,56),
-(57,57),
-(58,58),
-(59,59),
-(60,60),
-(61,61),
-(62,62),
-(63,63),
-(64,64),
-(65,65),
-(66,66),
-(67,67),
-(68,68),
-(69,69),
-(70,70),
-(71,71),
-(72,72),
-(73,73),
-(74,74),
-(75,75),
-(76,76),
-(77,77),
-(78,78),
-(79,79),
-(80,80),
-(81,81),
-(82,82),
-(83,83),
-(84,84)
-;
--- for (let i = 1; i <= 84; i++) { console.log ("(" + i + "," + i +")") } 
-*/

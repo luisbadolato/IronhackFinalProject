@@ -2,20 +2,16 @@ package com.gitaristik.edgeauthservice.controller.impl;
 
 import com.gitaristik.edgeauthservice.controller.interfaces.LessonUserDataController;
 import com.gitaristik.edgeauthservice.dto.LessonUserDataDTO;
-import com.gitaristik.edgeauthservice.enums.ModuleName;
 import com.gitaristik.edgeauthservice.model.LessonUserData;
 import com.gitaristik.edgeauthservice.repository.LessonUserDataRepository;
-import com.gitaristik.edgeauthservice.security.entity.Usuario;
 import com.gitaristik.edgeauthservice.security.repository.UsuarioRepository;
 import com.gitaristik.edgeauthservice.service.interfaces.LessonUserDataService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.server.ResponseStatusException;
 
 import javax.validation.Valid;
 import java.util.List;
-import java.util.Optional;
 
 @RequestMapping("/data")
 @RestController

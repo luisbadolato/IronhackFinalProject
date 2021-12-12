@@ -1,0 +1,1261 @@
+{
+	"info": {
+		"_postman_id": "aa902004-baf7-408a-98a6-ebaae73b3a8e",
+		"name": "Gitaristik",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Scales Service",
+			"item": [
+				{
+					"name": "Get All Subjects",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/subjects",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"subjects"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Sections",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/sections",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"sections"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Units",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/units",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"units"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Lessons",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/lessons",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"lessons"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Subject By ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/subjects/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"subjects",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Section By ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/sections/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"sections",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Unit By ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/units/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"units",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Lesson By ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/lessons/66",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"lessons",
+								"66"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Chords Service",
+			"item": [
+				{
+					"name": "Get All Subjects",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8082/subjects",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"subjects"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Sections",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8082/sections",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"sections"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Units",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8082/units",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"units"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Lessons",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8082/lessons",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"lessons"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Subject By ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8082/subjects/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"subjects",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Section By ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8082/sections/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"sections",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Unit By ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8082/units/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"units",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Lesson By ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8082/lessons/66",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"lessons",
+								"66"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Edge Auth Service",
+			"item": [
+				{
+					"name": "Lesson User Data",
+					"item": [
+						{
+							"name": "Get All Data By UserID",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTYzODgyNDgwMSwiZXhwIjoxNjM4ODYwODAxfQ.0FhmUwnZG3vGQkGcVFom9VEzqsnh5otYNm1XYBrw786UCNuPmjmuCtglcDdaYqpzq71Ntmlx9Vo85cS3DWBF5A",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/data/user/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"data",
+										"user",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Data By UserID & Module & LessonID",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTYzODgyNDgwMSwiZXhwIjoxNjM4ODYwODAxfQ.0FhmUwnZG3vGQkGcVFom9VEzqsnh5otYNm1XYBrw786UCNuPmjmuCtglcDdaYqpzq71Ntmlx9Vo85cS3DWBF5A",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/data/total/1/ARPEGGIO_MODULE/3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"data",
+										"total",
+										"1",
+										"ARPEGGIO_MODULE",
+										"3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Data By UserName & Module & LessonID",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTYzODgyNDgwMSwiZXhwIjoxNjM4ODYwODAxfQ.0FhmUwnZG3vGQkGcVFom9VEzqsnh5otYNm1XYBrw786UCNuPmjmuCtglcDdaYqpzq71Ntmlx9Vo85cS3DWBF5A",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/data/lolo/CHORDS_MODULE/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"data",
+										"lolo",
+										"CHORDS_MODULE",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get All Data By UserName & Module",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTYzODgyNDgwMSwiZXhwIjoxNjM4ODYwODAxfQ.0FhmUwnZG3vGQkGcVFom9VEzqsnh5otYNm1XYBrw786UCNuPmjmuCtglcDdaYqpzq71Ntmlx9Vo85cS3DWBF5A",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/data/luisbadolato/SCALES_MODULE/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"data",
+										"luisbadolato",
+										"SCALES_MODULE",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Lesson User Data",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiaWF0IjoxNjM5MDk1ODA1LCJleHAiOjE2MzkxMzE4MDV9.vAGKgMhozEOYkepnvso78n2UrIecnCaWrBEK39y9ME50USrNQ9ZiFqAyu053AARPOQzNzUrCAmsHtlZan-g7FA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/data/15",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"data",
+										"15"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "New Lesson User Data TOKEN",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiaWF0IjoxNjM4ODI1NTk2LCJleHAiOjE2Mzg4NjE1OTZ9.b8lOVChFO2y2CQM1NZq3AXg9PBPOjU7uW4qjjK013uDJVanaiXdWU_waULRWEaRmyogPtIYmtXyJrpw-gUEzxA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"annotation\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pretium in urna nec vestibulum. Etiam dolor eros, vulputate vel augue in, tincidunt finibus est. Aenean ultrices nisi sapien, sed tincidunt sapien posuere at.\",\r\n    \"mastery\": 1,\r\n    \"lessonId\": 3,\r\n    \"usuarioId\": 1,\r\n    \"moduleName\": \"ARPEGGIO_MODULE\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/data/new",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"data",
+										"new"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Lesson User Data TOKEN",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiaWF0IjoxNjM4ODI1NTk2LCJleHAiOjE2Mzg4NjE1OTZ9.b8lOVChFO2y2CQM1NZq3AXg9PBPOjU7uW4qjjK013uDJVanaiXdWU_waULRWEaRmyogPtIYmtXyJrpw-gUEzxA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"annotation\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pretium in urna nec vestibulum. Etiam dolor eros, vulputate vel augue in, tincidunt finibus est. Aenean ultrices nisi sapien, sed tincidunt sapien posuere at.\",\r\n    \"mastery\": 1,\r\n    \"lessonId\": 3,\r\n    \"usuarioId\": 1,\r\n    \"moduleName\": \"ARPEGGIO_MODULE\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/data/update",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"data",
+										"update"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "User",
+					"item": [
+						{
+							"name": "Nuevo Usuario",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nombre\": \"Luis Badolato\",\r\n    \"nombreUsuario\": \"luisbadolato\",\r\n    \"email\": \"luisbadolato@gmail.com\",\r\n    \"password\": \"password\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/auth/nuevo",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"auth",
+										"nuevo"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Nuevo Admin",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nombre\": \"admin\",\r\n    \"nombreUsuario\": \"admin\",\r\n    \"email\": \"admin@admin.com\",\r\n    \"password\": \"admin\",\r\n    \"roles\": [\"admin\"]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/auth/nuevo",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"auth",
+										"nuevo"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Login Usuario",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nombreUsuario\": \"admin\",\r\n    \"password\": \"admin\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/auth/login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"auth",
+										"login"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get All Users",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTYzODgyNDgwMSwiZXhwIjoxNjM4ODYwODAxfQ.0FhmUwnZG3vGQkGcVFom9VEzqsnh5otYNm1XYBrw786UCNuPmjmuCtglcDdaYqpzq71Ntmlx9Vo85cS3DWBF5A",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/users/all",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"users",
+										"all"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get User Details By UserName",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTYzOTA2MTY5NSwiZXhwIjoxNjM5MDk3Njk1fQ.KEeWMQ6Gj7C-IJt_gyfrxUH3b6cRab8dI2uCMPuea1Ck4t0-EmJgxVlWlrZ-FduzCi5wuu4QHMGTZlV2ICqv7g",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/users/name/luisbadolato",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"users",
+										"name",
+										"luisbadolato"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete User NEEDS ADMIN TOKEN",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTYzODgyNDgwMSwiZXhwIjoxNjM4ODYwODAxfQ.0FhmUwnZG3vGQkGcVFom9VEzqsnh5otYNm1XYBrw786UCNuPmjmuCtglcDdaYqpzq71Ntmlx9Vo85cS3DWBF5A",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/users/3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"users",
+										"3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete User By UserName",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTYzODgyNDgwMSwiZXhwIjoxNjM4ODYwODAxfQ.0FhmUwnZG3vGQkGcVFom9VEzqsnh5otYNm1XYBrw786UCNuPmjmuCtglcDdaYqpzq71Ntmlx9Vo85cS3DWBF5A",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/users/3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"users",
+										"3"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Theory NO AUTH",
+					"item": [
+						{
+							"name": "Get Theory Subjects",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/theory/subjects",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"theory",
+										"subjects"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Theory Lessons",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/theory/lessons",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"theory",
+										"lessons"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Theory Subject By ID",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/theory/subjects/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"theory",
+										"subjects",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Theory Lesson By ID",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/theory/lessons/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"theory",
+										"lessons",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Arpeggios TOKEN",
+					"item": [
+						{
+							"name": "Get Arpeggio Subjects",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJsdWlzYmFkb2xhdG8iLCJpYXQiOjE2Mzg4MTU3ODAsImV4cCI6MTYzODg1MTc4MH0.XU9cEreFINISMl6869hbcJvz7AxGbijCV1vc06HtmzinNc4kDosBeiaQXRU5hqVuCaqyiRAmak7l_ChxDAbMkw",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/arpegios/subjects",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"arpegios",
+										"subjects"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Arpeggio Lessons",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJsdWlzYmFkb2xhdG8iLCJpYXQiOjE2Mzg4MTU3ODAsImV4cCI6MTYzODg1MTc4MH0.XU9cEreFINISMl6869hbcJvz7AxGbijCV1vc06HtmzinNc4kDosBeiaQXRU5hqVuCaqyiRAmak7l_ChxDAbMkw",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/arpegios/lessons",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"arpegios",
+										"lessons"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Arpeggio Subject By ID",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJsdWlzYmFkb2xhdG8iLCJpYXQiOjE2Mzg4MTU3ODAsImV4cCI6MTYzODg1MTc4MH0.XU9cEreFINISMl6869hbcJvz7AxGbijCV1vc06HtmzinNc4kDosBeiaQXRU5hqVuCaqyiRAmak7l_ChxDAbMkw",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/arpegios/subjects/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"arpegios",
+										"subjects",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Arpeggio Lesson By ID",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJsdWlzYmFkb2xhdG8iLCJpYXQiOjE2Mzg4MTU3ODAsImV4cCI6MTYzODg1MTc4MH0.XU9cEreFINISMl6869hbcJvz7AxGbijCV1vc06HtmzinNc4kDosBeiaQXRU5hqVuCaqyiRAmak7l_ChxDAbMkw",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/arpegios/lessons/10",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"arpegios",
+										"lessons",
+										"10"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Scales TOKEN",
+					"item": [
+						{
+							"name": "Get Scales Subjects",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJsdWlzYmFkb2xhdG8iLCJpYXQiOjE2Mzg4MTU3ODAsImV4cCI6MTYzODg1MTc4MH0.XU9cEreFINISMl6869hbcJvz7AxGbijCV1vc06HtmzinNc4kDosBeiaQXRU5hqVuCaqyiRAmak7l_ChxDAbMkw",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/scales/subjects",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"scales",
+										"subjects"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Scales Lessons",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJsdWlzYmFkb2xhdG8iLCJpYXQiOjE2Mzg4MTU3ODAsImV4cCI6MTYzODg1MTc4MH0.XU9cEreFINISMl6869hbcJvz7AxGbijCV1vc06HtmzinNc4kDosBeiaQXRU5hqVuCaqyiRAmak7l_ChxDAbMkw",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/scales/lessons",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"scales",
+										"lessons"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Scales Subject By ID",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJsdWlzYmFkb2xhdG8iLCJpYXQiOjE2Mzg4MTU3ODAsImV4cCI6MTYzODg1MTc4MH0.XU9cEreFINISMl6869hbcJvz7AxGbijCV1vc06HtmzinNc4kDosBeiaQXRU5hqVuCaqyiRAmak7l_ChxDAbMkw",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/scales/subjects/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"scales",
+										"subjects",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Scales Lesson By ID",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJsdWlzYmFkb2xhdG8iLCJpYXQiOjE2Mzg4MTU3ODAsImV4cCI6MTYzODg1MTc4MH0.XU9cEreFINISMl6869hbcJvz7AxGbijCV1vc06HtmzinNc4kDosBeiaQXRU5hqVuCaqyiRAmak7l_ChxDAbMkw",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/scales/lessons/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"scales",
+										"lessons",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Chords TOKEN",
+					"item": [
+						{
+							"name": "Get Chord Subjects",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJsdWlzYmFkb2xhdG8iLCJpYXQiOjE2Mzg4MTU3ODAsImV4cCI6MTYzODg1MTc4MH0.XU9cEreFINISMl6869hbcJvz7AxGbijCV1vc06HtmzinNc4kDosBeiaQXRU5hqVuCaqyiRAmak7l_ChxDAbMkw",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/chords/subjects",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"chords",
+										"subjects"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Chord Lessons",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJsdWlzYmFkb2xhdG8iLCJpYXQiOjE2Mzg4MTU3ODAsImV4cCI6MTYzODg1MTc4MH0.XU9cEreFINISMl6869hbcJvz7AxGbijCV1vc06HtmzinNc4kDosBeiaQXRU5hqVuCaqyiRAmak7l_ChxDAbMkw",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/chords/lessons",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"chords",
+										"lessons"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Chord Subject By ID",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJsdWlzYmFkb2xhdG8iLCJpYXQiOjE2Mzg4MTU3ODAsImV4cCI6MTYzODg1MTc4MH0.XU9cEreFINISMl6869hbcJvz7AxGbijCV1vc06HtmzinNc4kDosBeiaQXRU5hqVuCaqyiRAmak7l_ChxDAbMkw",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/chords/subjects/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"chords",
+										"subjects",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Chord Lesson By ID",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJsdWlzYmFkb2xhdG8iLCJpYXQiOjE2Mzg4MTU3ODAsImV4cCI6MTYzODg1MTc4MH0.XU9cEreFINISMl6869hbcJvz7AxGbijCV1vc06HtmzinNc4kDosBeiaQXRU5hqVuCaqyiRAmak7l_ChxDAbMkw",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/chords/lessons/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"chords",
+										"lessons",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
