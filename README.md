@@ -1,4 +1,3 @@
-     <br />
   <h2 align="center">
 	- Ironhack Bootcamp Final Project -
     <br />
