@@ -56,6 +56,7 @@ The main http routes in this services are:
 ``
 GET http://localhost:808X/subjects
 ``
+
 ``
 GET http://localhost:808X/lessons/{id}
 ``
@@ -76,6 +77,7 @@ Authorization routes:
 ``
 POST http://localhost:8080/auth/login (No authorization needed)
 ``
+
 ``
 POST http://localhost:8080/auth/nuevo (No authorization needed)
 ``
@@ -84,12 +86,15 @@ User routes:
 ``
 GET http://localhost:8080/users/all  (Admin role needed)
 ``
+
 ``
 GET http://localhost:8080/users/{id}  (Admin role needed)
 ``
+
 ``
 GET http://localhost:8080/users/name/{nombreUsuario}
 ``
+
 ``
 DELETE http://localhost:8080/users/name/{nombreUsuario}
 ``
@@ -99,18 +104,23 @@ Lesson user data routes:
 ``
 GET http://localhost:8080/data/user/{id}
 ``
+
 ``
 GET http://localhost:8080/data/total/{nombreUsuario}/{moduleName}
 ``
+
 ``
 GET http://localhost:8080/data/total/{nombreUsuario}/{moduleName}/{lessonId}
 ``
+
 ``
 POST http://localhost:8080/data/new
 ``
+
 ``
 PUT http://localhost:8080/update/{id}
 ``
+
 ``
 DELETE http://localhost:8080/data/{id}
 ``
