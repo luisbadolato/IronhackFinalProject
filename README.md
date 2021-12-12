@@ -15,7 +15,7 @@
 
 <!-- TABLE OF CONTENTS -->
 
-  <summary><h2 style="display: inline-block"> 📋 Table of Contents</h2></summary>
+<summary><h2 style="display: inline-block">📋 Table of Contents</h2></summary>
   <ol>
     <li> <a href="#about-the-project">About The Project</a> </li>
     <li><a href="#app-structure"> App Structure</a></li>
@@ -28,7 +28,7 @@
 
 <!-- ABOUT THE PROJECT -->
 
-## ✏️ About The Project
+<h2 id="about-the-project">✏️ About The Project</h2>
 
 This project was created as the final project for the Ironhack FullStack Remote Bootcamp to showcase some of the skills adquired during the course. 
 
@@ -42,7 +42,7 @@ This project was created as the final project for the Ironhack FullStack Remote 
 
 
 <!-- APP STRUCTURE -->
-## ⚙️ App Structure
+<h2 id="app-structure">⚙️ App Structure</h2>
 
 The app main functionality comes from four services where the data needed for each of its lessons is stored.
 They share a similar database structure, but in future implementations they might differ from each other to accomodate more advanced functionalities.
@@ -132,7 +132,7 @@ DELETE http://localhost:8080/data/{id}
 There are also several routes not yet accessed by the frontend, but they will be useful for future implementations.
 
 <!-- GETTING STARTED -->
-## ⌨️ Getting Started
+<h2 id="getting-started">⌨️ Getting Started</h2>
 
 In order to run the application you'll have to follow these steps:
 
@@ -164,7 +164,7 @@ In order to run the application you'll have to follow these steps:
 
    
 <!-- USAGE EXAMPLES -->
-## 💻 Usage
+<h2 id="usage">💻 Usage</h2>
 
 ### 🎼 Home Page
 The first thing you'll see when you open the app is the *index* page, where you can access the login page, register page or try some of the app functionality as a guest user.
@@ -214,11 +214,12 @@ In a future implementation we'll add the possibility to change user details thro
 
 
 <!-- CONTRIBUTION -->
-## 👩‍👩‍👧‍👧 Contribution and Special Thanks
+<h2 id="contribution">👩‍👩‍👧‍👧 Contribution and Special Thanks</h2>
+
 App design and development by Luis Badolato.
 Special thanks to the teaching team in Ironhack Bootcamp: Víctor Cardozo, Iván Trujillo and Adrià López for their help and patience, to my fellow students and specially to Ana Badolato for her help achieving a somewhat decent UX for the project.
 
 <!-- LICENSE -->
-## ®️ License
+<h2 id="license">®️ License</h2>
 
 Copyright © 2021 Luis Badolato
