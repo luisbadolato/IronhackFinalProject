@@ -51,7 +51,7 @@ They share a similar database structure, but in future implementations they migh
 	<img src="https://i.imgur.com/phkWRhS.png">
 </p>
 
-The main http routes in this services are: 
+The main http routes in these services are: 
 
 ``
 GET http://localhost:808X/subjects
