@@ -1,8 +1,8 @@
 <h2 align="center">
 	- Ironhack Bootcamp Final Project -
-    <br />
-    <br />
-   </h2>
+	<br />
+	<br />
+</h2>
 
 <p align="center">
 	<img src="https://i.imgur.com/ebWGfYA.png">
